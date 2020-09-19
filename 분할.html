@@ -1,10 +1,14 @@
-<!<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <title> 몸만들기</title>
 <meta charset="utf-8">
 
 <style>
+
+body {margin: 0;}
+
+
   a {color:black;
      text-decoration:none;
   }
@@ -12,7 +16,19 @@
   h1 {
       font-size:45px;
       text-align:center;
+      border-bottom: 2px gray solid ;
+      margin:0;
+      padding:20px;
   }
+
+ol {
+  border-right: 1px gray solid;
+  width:120px;
+  margin:0;
+  padding:20px;
+}
+
+
 
   .saw {
     color:gray;
@@ -22,6 +38,20 @@
   color: red
 }
 
+#grid {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+
+#grid ol {
+  padding-left:33 px;
+}
+
+#grid #article {
+  padding-left: 25px;
+}
+
+
   </style>
 
 </head>
@@ -29,11 +59,15 @@
 <body>
 <h1> <a href="intro.html" target="_self" title="목차" > 어떻게 근육을 잘 성장시킬수 있는가? </a> </h1>
 
-<ol>
-  <li> <a href="분할.html" target="_self" class="saw" id="active" > 분할 </a> </li>
-  <li> <a href="식단.html" target="_self" class="saw" > 식단 </a> </li>
-  <li> <a href="운동프로그램.html" target="_self" class="saw"> 운동프로그램 </a> </li>
-</ol>
+<div id="grid">
+    <ol>
+       <li> <a href="분할.html" target="_self" class="saw" id="active"> 분할 </a> </li>
+       <li> <a href="식단.html" target="_self" class="saw" > 식단 </a> </li>
+       <li> <a href="운동프로그램.html" target="_self" class="saw"> 운동프로그램 </a> </li>
+    </ol>
+<div id="article">
+
+
 
 <h2 style="margin-top:60px;">분할 </h2>
 <img src="분할.jpg" style="width:20%;" styel="height:20%;">
@@ -43,5 +77,7 @@
   크게 전신, 2분할, 3분할, 4분할이 있는데 분할 설정에 우선순위는 한주에 얼마나 운동이 가능한가이다. 빈도수에 따라 분할프로그램이 달라진다.<br>
   약물을 사용하지 않는 네츄럴 운동자는 <strong> 3분할을 진행함으로써 근육 부위당 주2회 정도의 자극을 줄 수 있어 </<strong> 근육에 충분한 자극을 주기에 용이하다.
 </p>
+</div>
+</div>
 </body>
 </html>
